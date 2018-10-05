@@ -6,21 +6,20 @@
     
     <!-- 4. 插入我們新增的數據看看，兩個 {{ }} 中可以綁定 data 任意值 -->
     <h2>{{ hello }}</h2>
-    
-    <!-- 5. 也可以撰寫一些 javascript code -->
-    <h2>{{ hello + ' and Ironman 2017' }}</h2>
-
+    <h2>{{'Here is '+ data}}</h2>
     <!-- 6. 加一個 input 來嘗試今天的任務，雙向綁定 
          修改 input 裡面的值，綁定的地方也會馬上更新!!
          是不是很酷呢?! -->
+         Hello Changer
     <input type="text" v-model="hello" />
-    
+     <br/>
+    Data Changer
+    <input type ="text" v-model="data">
     <!-- 8. 使用 checkbox 來完成雙向綁定 -->
-    <br>
+    <br/>
     <input id="toggle" type="checkbox" v-model="toggle" />
     <label for="toggle">{{ toggle }}</label>
-    
-    <!-- 以上今天範例 -->
+
 
     <h2>Essential Links</h2>
     <ul>
@@ -53,6 +52,7 @@ export default {
       // 3. 嘗試新增一個數據
       hello: 'Hello Vue 2.0 !',
       
+      data :'I\'m the data',
       // 7. checkbox 預設是 false
       toggle: false,
     }
