@@ -2,7 +2,7 @@
     <div class="container">
         <h1>Temprature Conversion </h1>
         <input id="tempratureConversion" type="checkbox" v-model="isCelsius">
-        <lable for="tempratureConversion" >切換成 {{toggleTemperature}}</lable>
+        <label for="tempratureConversion" >切換成 {{toggleTemperature}}</label>
         <br/>
         <br/>
         <div class="calculate">
