@@ -8,8 +8,9 @@ Vue.use(VueRouter)
 
 
 //page
-import Hello from './components/Hello.vue';
-import CtoF from './components/C2F.vue';
+import Hello from './page/Hello.vue';
+import CtoF from './page/C2F.vue';
+import CombineCompoment from './page/CombineCompoment.vue'
 import App from './App.vue';
 
 const router = new VueRouter({
@@ -28,7 +29,11 @@ const router = new VueRouter({
       name:'CtoF',
       component: CtoF
     },
-
+    { 
+      path:'/CombineCompoment',
+      name:'CombineCompoment',
+      component: CombineCompoment
+    },
     //redirect
     {path :'/*' ,redirect:'/hello'}
   ]
@@ -38,9 +43,11 @@ const router = new VueRouter({
 
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
-  template: '<App/>',
-  router,
-  render:h =>h(App)
+
   // components: { App }
+  el: '#app',
+  // router 掛載設定
+  router,
+  // app.vue 掛載並 replace index.html 原始掛載點： <div id="app"></div>
+  render: h => h( App )
 })

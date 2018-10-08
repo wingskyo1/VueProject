@@ -1,6 +1,6 @@
 <template>
-  <div class="hello">
-  
+  <div id="hello" class="container">
+  <img src="../assets/logo.png">
     <!-- 2. msg 雙向綁定到 template 的地方 -->
     <h1>{{ msg }}</h1>
     
@@ -62,6 +62,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
 h1, h2 {
   font-weight: normal;
 }
