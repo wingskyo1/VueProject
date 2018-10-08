@@ -1,27 +1,23 @@
 <template>
-  <div >
-
-
+  <div>
     <div class="my-nav">
-    <router-link :to="{path: '/hello'}">Hello</router-link>
-    <router-link :to="{name: 'CtoF'}">CtoF</router-link>
-     <router-link :to="{name: 'CombineCompoment'}">CombineCompoment</router-link>
+      <router-link :to="{path: '/hello'}">Hello</router-link>
+      <router-link :to="{name: 'CtoF'}">CtoF</router-link>
+      <router-link :to="{name: 'CombineCompoment'}">CombineCompoment</router-link>
     </div>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
-
-export default {
-
-}
+  export default {
+  }
 </script>
 
 <style>
- .my-nav {
+  .my-nav {
     position: fixed;
-    top: 60px;  
+    top: 60px;
     padding: 0 10px;
   }
   .my-nav a {
