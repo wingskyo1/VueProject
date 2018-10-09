@@ -12,6 +12,9 @@ Vue.use(Vuex)
 import Hello from './page/Hello.vue';
 import CtoF from './page/C2F.vue';
 import CombineCompoment from './page/CombineCompoment.vue'
+import Count from './page/Count.vue'
+import CountVuex from './page/CountVuex.vue'
+import store from './store';
 import App from './App.vue';
 
 const router = new VueRouter({
@@ -35,6 +38,16 @@ const router = new VueRouter({
       name:'CombineCompoment',
       component: CombineCompoment
     },
+    { 
+      path:'/Count',
+      name:'Count',
+      component: Count
+    },
+    { 
+      path:'/CountVuex',
+      name:'CountVuex',
+      component: CountVuex
+    },
     //redirect
     {path :'/*' ,redirect:'/hello'}
   ]
@@ -49,6 +62,7 @@ new Vue({
   el: '#app',
   // router 掛載設定
   router,
+  store,
   // app.vue 掛載並 replace index.html 原始掛載點： <div id="app"></div>
   render: h => h( App )
 })
