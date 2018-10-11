@@ -1,19 +1,52 @@
 import * as types from './mutations_type.js'
-import Vue from 'vue'
+// import Vue from 'vue'
 
-// state
 export const state = {
-  count: 0
-}
+  count: 0,
+  todo: [{
+      key: 0,
+      content: 'test',
+      done: false
+    },
+    {
+      key: 1,
+      content: 'Ok',
+      done: true
+    },
+    {
+      key: 2,
+      content: 'Third',
+      done: false
+    },
+    {
+      key: 3,
+      content: 'try',
+      done: true
+    }
+  ]
+};
 
-// mutations
+let todoKey = state.todo.length;
+
+
+
 export const mutations = {
-  // action 發出 commit 會對應到 mutation 使用的是 Object key 方式
-  [types.INCREASE] (state) {
-    // 在 mutation 改變 state（只有 mutation 可以改變！）
+
+  [types.INCREASE](state) {
     state.count += 1;
   },
-  [types.DECREASE] (state) {
+
+  [types.DECREASE](state) {
     state.count -= 1;
   },
-}
+
+  [types.ADDTODO](state, newTodo) {
+    state.todo.push({
+      key: todoKey,
+      content: newTodo,
+      done: false
+    });
+    todoKey++;
+  },
+
+};

@@ -1,0 +1,11 @@
+{
+    "go.autocompleteUnimportedPackages": true,
+    "vetur.format.defaultFormatter.js": "vscode-typescript",
+    "vetur.format.defaultFormatter.html": "js-beautify-html",
+    "vetur.validation.template": false,
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+      "editor.quickSuggestions": {
+        "strings": true,
+      },
+      "files.autoSave": "off"
+    }

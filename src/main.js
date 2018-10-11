@@ -15,6 +15,7 @@ import CombineCompoment from './page/CombineCompoment.vue'
 import Count from './page/Count.vue'
 import CountVuex from './page/CountVuex.vue'
 import store from './store';
+import TodoVuex from './page/Todo'
 import App from './App.vue';
 
 const router = new VueRouter({
@@ -47,6 +48,11 @@ const router = new VueRouter({
       path:'/CountVuex',
       name:'CountVuex',
       component: CountVuex
+    },
+    {
+      path:'/Todo',
+      name:'Todo',
+      component: TodoVuex
     },
     //redirect
     {path :'/*' ,redirect:'/hello'}

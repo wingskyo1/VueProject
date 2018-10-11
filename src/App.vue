@@ -6,6 +6,7 @@
       <router-link :to="{name: 'CombineCompoment'}">CombineCompoment</router-link>
       <router-link :to="{name: 'Count'}">Count</router-link>
       <router-link :to="{name: 'CountVuex'}">CountVuex</router-link>
+      <router-link :to="{name: 'Todo'}">Todo</router-link>
     </div>
     <router-view></router-view>
   </div>

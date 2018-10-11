@@ -11,3 +11,8 @@ export const actionDecrease = ({commit}) => {
   commit(types.DECREASE)
 }
 
+export const addTodo = ({commit} , newTodo) => {
+  console.log('addTodo2');
+  commit(types.ADDTODO,newTodo);
+}
+
