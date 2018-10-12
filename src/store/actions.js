@@ -16,3 +16,7 @@ export const addTodo = ({commit} , newTodo) => {
   commit(types.ADDTODO,newTodo);
 }
 
+export const toggleTodo = ({commit},key) =>{
+console.log ('toggle item = '+key)
+commit(type.TOGGLE,key);
+}

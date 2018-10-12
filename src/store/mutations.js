@@ -48,5 +48,8 @@ export const mutations = {
     });
     todoKey++;
   },
+  [types.TOGGLE](state,key){
+      state.todo.filter(key)
+  }
 
 };

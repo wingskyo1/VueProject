@@ -13,18 +13,18 @@
 </template>
 
 <script>
-  export default {
-  }
+export default {
+}
 </script>
 
 <style>
-  .my-nav {
-    position: fixed;
-    top: 60px;
-    padding: 0 10px;
-  }
-  .my-nav a {
-    display: block;
-    margin-bottom: 10px;
-  }
+.my-nav {
+  position: fixed;
+  top: 60px;
+  padding: 0 10px;
+}
+.my-nav a {
+  display: block;
+  margin-bottom: 10px;
+}
 </style>
