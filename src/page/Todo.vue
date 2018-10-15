@@ -3,7 +3,7 @@
         <h2>Todo List</h2>
         <div class="row">
             <div class="input-group col-md-4">
-                <input type="text" placeholder="add Todo.." v-model="newTodo" @keyup.enter="actionAddTodo()">
+                <input type="text" class="form-control" placeholder="add Todo.." v-model="newTodo" @keyup.enter="actionAddTodo()">
                 <!-- 增加按鈕 -->
                 <span class="input-group-btn">
                     <button class="btn btn-success" type="button" @click="actionAddTodo">
@@ -75,8 +75,8 @@ export default {
     methods: {
         ...mapActions([
             'addTodo',
-            '',
-            ''
+            'toggleTodo',
+            'deleteTodo'
         ]),
         actionAddTodo () {
             this.addTodo(this.newTodo);

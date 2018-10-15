@@ -48,8 +48,26 @@ export const mutations = {
     });
     todoKey++;
   },
-  [types.TOGGLE](state,key){
-      state.todo.filter(key)
-  }
+  [types.TOGGLE](state, key) {
+    for (var i in state.todo) {
+      console.log(i + "== " +key);
+      console.log(i == key);
+      var target = state.todo[i];
+      if (target.key === key) {
+        state.todo[i].done = !state.todo[i].done ;
+        console.log("key : "+ key +" change to :" + i.done)
+        break;
+      }
+    }
+  },
+  [types.DELETE](state,key){
+    for(var i in state.todo){
+      var target = state.todo[i];
+      if(target.key === key){
+        //移除
+        state.todo.splice(i,1);
+      }
+    }
 
+  }
 };
