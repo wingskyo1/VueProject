@@ -12,6 +12,7 @@
       </div>
     </nav-bar>
     <jumbotron />
+     <!-- 傳遞參數進去 container這個compoment -->
     <container :passInList="list" />
   </div>
 </template>
