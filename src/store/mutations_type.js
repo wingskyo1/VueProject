@@ -1,5 +1,6 @@
-export const INCREASE = 'INCREASE';
-export const DECREASE = 'DECREASE';
-export const ADDTODO = 'ADDTODO';
-export const TOGGLE ='TOGGLE';
-export const DELETE = 'DELETE';
+export const INCREASE = 'increase';
+export const DECREASE = 'decrease';
+export const ADDTODO = 'addTodo';
+export const TOGGLETODO ='toggleTodo';
+export const DELETETODO = 'deleteTodo';
+export const UPDATETODO ='updateTodo';

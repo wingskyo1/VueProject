@@ -48,7 +48,7 @@ export const mutations = {
     });
     todoKey++;
   },
-  [types.TOGGLE](state, key) {
+  [types.TOGGLETODO](state, key) {
     for (var i in state.todo) {
       console.log(i + "== " +key);
       console.log(i == key);
@@ -60,7 +60,7 @@ export const mutations = {
       }
     }
   },
-  [types.DELETE](state,key){
+  [types.DELETETODO](state,key){
     for(var i in state.todo){
       var target = state.todo[i];
       if(target.key === key){
@@ -68,6 +68,18 @@ export const mutations = {
         state.todo.splice(i,1);
       }
     }
-
-  }
+  },
+  [types.UPDATETODO] (state, obj) {
+    console.log("mutations");
+    console.log("state ", state);
+    for(var i in state.todo){
+      var item = state.todo[i];
+      if ( item.key === obj.key){
+        console.log('UPDATE_TODO:', item.content, ' to →', obj.updateString);
+        item.content = obj.updateString;
+        break;
+      }
+    }
+    console.log("mutations over");
+  },
 };

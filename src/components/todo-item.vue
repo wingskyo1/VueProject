@@ -66,7 +66,7 @@ export default {
         ...mapActions([
             'toggleTodo',
             'deleteTodo',
-            'addTodo'
+            'updateTodo'
         ]),
         showEditMode () {
             this.updateMode = true;
@@ -76,10 +76,11 @@ export default {
       */
         actionEdit (e) {
             const userChange = e.target.value.trim();
+            console.log(e.target);
             console.log('userChange', this.item.key, userChange);
             this.updateTodo({
                 key: this.item.key,
-                update: userChange
+                updateString: userChange
             });
             this.updateMode = false;
         },

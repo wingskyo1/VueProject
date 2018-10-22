@@ -18,11 +18,17 @@ export const addTodo = ({commit} , newTodo) => {
 
 export const toggleTodo = ({commit},key) =>{
 console.log ('toggle key = '+key);
-commit(types.TOGGLE,key);
+commit(types.TOGGLETODO,key);
 }
 
 
 export const deleteTodo = ({commit},key)=>{
   console.log ('delete key = '+key);
-  commit(types.DELETE,key);
+  commit(types.DELETETODO,key);
 }
+
+export const updateTodo =({commit},obj) =>{
+  console.log('update key11111 = ',obj);
+  commit(types.UPDATETODO,obj);
+}
+
