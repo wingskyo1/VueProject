@@ -65,7 +65,12 @@ export default {
             'addTodo',
             'toggleTodo',
         ]),
+        
         actionAddTodo () {
+            //沒打字就不新增
+            if(this.newTodo ===''){
+                return;
+                }
             this.addTodo(this.newTodo);
             this.newTodo = '';
         }
