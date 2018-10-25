@@ -16,6 +16,8 @@ import Count from './page/Count.vue'
 import CountVuex from './page/CountVuex.vue'
 import store from './store';
 import TodoVuex from './page/Todo'
+import ShopVuex from './page/Shop.vue'
+import CartVuex from './page/Cart.vue'
 import App from './App.vue';
 
 const router = new VueRouter({
@@ -53,6 +55,17 @@ const router = new VueRouter({
       path:'/Todo',
       name:'Todo',
       component: TodoVuex
+    },
+    {
+      path:'/Shop',
+      name:'Shop',
+      component: ShopVuex
+
+    },
+    {
+      path:'/Cart',
+      name:'Cart',
+      component:CartVuex
     },
     //redirect
     {path :'/*' ,redirect:'/hello'}

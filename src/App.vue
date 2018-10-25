@@ -7,6 +7,8 @@
       <router-link :to="{name: 'Count'}">Count</router-link>
       <router-link :to="{name: 'CountVuex'}">CountVuex</router-link>
       <router-link :to="{name: 'Todo'}">Todo</router-link>
+      <router-link :to="{name: 'Shop'}">Shop</router-link>
+      <router-link :to="{name: 'Cart'}">Cart</router-link>
     </div>
     <router-view></router-view>
   </div>

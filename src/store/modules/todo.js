@@ -135,7 +135,6 @@ const mutations = {
 
 export default {
     state,
-  types,
   getters,
   actions,
   mutations,

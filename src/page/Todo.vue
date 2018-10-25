@@ -56,10 +56,24 @@ export default {
             newTodo: '',
         }
     },
-    computed: mapGetters({
+
+    computed: {
+        ...mapGetters({
         todo: 'getTodos',
         done: 'getDone'
     }),
+
+
+    },
+    //ES 7 寫法
+    // computed: {
+    //     ...mapGetters([
+    //         'getTodos',
+    //         'getDone'
+
+    //     ])
+    // },
+
     methods: {
         ...mapActions([
             'addTodo',
