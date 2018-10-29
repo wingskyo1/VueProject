@@ -18,6 +18,7 @@ import store from './store';
 import TodoVuex from './page/Todo'
 import ShopVuex from './page/Shop.vue'
 import CartVuex from './page/Cart.vue'
+import Open1999 from './page/Open1999.vue'
 import App from './App.vue';
 
 const router = new VueRouter({
@@ -66,6 +67,11 @@ const router = new VueRouter({
       path:'/Cart',
       name:'Cart',
       component:CartVuex
+    },
+    {
+      path:'/Open1999',
+      name:'Open1999',
+      component: Open1999
     },
     //redirect
     {path :'/*' ,redirect:'/hello'}

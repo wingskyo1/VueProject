@@ -8,3 +8,7 @@ export const getCountandTodo = state => {
 
 // just return all state
 export const getAllstate = state => state
+
+
+//helpers 
+export const getLoading = state => state.loading;
