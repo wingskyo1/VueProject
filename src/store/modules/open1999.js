@@ -20,7 +20,7 @@ const actions = {
         // 啟動 loading
         commit(rootypes.LOADING, true);
         // use fetch call open 1999 API
-        fetch('http://work1999.kcg.gov.tw/open1999/ServiceRequestsQuery.asmx/ServiceRequestsQuery')
+        fetch('https://work1999.kcg.gov.tw/open1999/ServiceRequestsQuery.asmx/ServiceRequestsQuery')
           .then(function(response) {
             // fetch 有 'ok' 物件可以判斷 response state 是不是 200
             // 將資料處理成 JSON

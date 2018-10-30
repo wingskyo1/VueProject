@@ -8,7 +8,7 @@
                 </div>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="nav-item">
-                        <a class="nav-link hidden-xs-down" target="_blank" href="http://data.kcg.gov.tw/dataset/open1999">資料出處：data.kcg.gov.tw</a>
+                        <a class="nav-link hidden-xs-down" target="_blank" href="https://data.kcg.gov.tw/dataset/open1999">資料出處：data.kcg.gov.tw</a>
                     </li>
                 </ul>
             </div>
