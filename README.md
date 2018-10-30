@@ -4,7 +4,7 @@ Practice Coding with Vue2.0 + Vue Router + Vuex + Some open API
 
 
 
-<hr>
+
 # 執行環境 (nodejs 6.0+)
 <hr>
 
