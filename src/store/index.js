@@ -6,7 +6,7 @@ import todo from './modules/todo';
 import shop from './modules/shop';
 import opendata from './modules/open1999';
 
-import {state,getters, actions, mutations} from './helper.js';
+import {state,getters, actions, mutations} from './root.js';
 
 
 Vue.use(Vuex);
