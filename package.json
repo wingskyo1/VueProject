@@ -6,7 +6,8 @@
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "deploy": "npm run build push-dir --dir=dist --branch=master --cleanup"
   },
   "dependencies": {
     "vue": "^2.1.0",
